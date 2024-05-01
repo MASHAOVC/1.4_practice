@@ -1,11 +1,16 @@
 body {
     margin: 0;
+    font-family: 'TTLakes', sans-serif;
 }
 
 .side-menu {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     width: 320px;
+    height: 100%;
     background-color: #FFFFFF;
+    box-shadow: 30px 0 40px -30px #7E7E82;
 }
 
 .header {
@@ -34,3 +39,135 @@ body {
     width: 40px;
     height: 40px;
 }
+
+@font-face {
+    font-family: 'TTLakes';
+    font-weight: 400;
+    src: url(statics/TTLakes-Regular.eot),
+         url(statics/TTLakes-Regular.ttf) format('truetype'),
+         url(statics/TTLakes-Regular.woff) format('woff');
+
+}
+
+@font-face {
+    font-family: 'TTLakes';
+    font-weight: 500;
+    src: url(statics/TTLakes-Medium.eot),
+         url(statics/TTLakes-Medium.ttf) format('truetype'),
+         url(statics/TTLakes-Medium.woff) format('woff');
+
+}
+
+@font-face {
+    font-family: 'TTLakes';
+    font-weight: 700;
+    src: url(statics/TTLakes-Bold.eot),
+         url(statics/TTLakes-Bold.ttf) format('truetype'),
+         url(statics/TTLakes-Bold.woff) format('woff');
+
+}
+
+.main {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 46px;
+    flex-grow: 1;
+}
+
+.main__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #1B1C21;
+    margin-left: 24px;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main__link--focused {
+    color: #7E7E82;
+    margin-left: 20px;
+    vertical-align: middle;
+    margin-top: 8px;
+}
+
+.main__highltght {
+    display: inline-block;
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.footer {
+    margin-left: 24px;
+    margin-bottom: 32px;
+}
+
+.footer__buttons-wrapper {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.footer__button-call {
+    border: none;
+    background: none;
+    background-image: url('statics/call.svg');
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.footer__button-chat {
+    border: none;
+    background: none;
+    background-image: url('statics/chat.svg');
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.footer__button-profile {
+    border: none;
+    background: none;
+    background-image: url('statics/profile.svg');
+    width: 40px;
+    height: 40px;
+}
+
+.footer__email {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #1B1C21;
+}
+
+.footer__phone {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #1B1C21;
+}
+
+.footer__lang {
+    font-weight: 500;
+    font-size: 16px;
+    color: #1B1C21;
+}
+
+.footer__ru {
+    color: #7E7E82;
+    margin-right: 7px;
+}
+
+.footer__en {
+    margin-right: 7px;
+}
+
+.button:hover {
+    opacity: 0.5;
+    transition-duration: 0.4s
+}
+
