@@ -24,6 +24,7 @@ body {
 .header__wrapper {
     display: flex;
     align-items: center;
+    gap: 16px;
 }
 
 .header__logo {
@@ -36,7 +37,6 @@ body {
     border: none;
     width: 40px;
     height: 40px;
-    margin-right: 16px;
 }
 
 .header__button-search {
